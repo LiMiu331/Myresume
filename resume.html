@@ -1,0 +1,435 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>李斌 2020前端简历</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1896045_d4zn1vzolhf.css">
+    <script src="//at.alicdn.com/t/font_1928923_v358b6d5lwm.js"></script>
+    <style>
+        /*css reset*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /*common css  */
+        .pill {
+            background: #000;
+            color: #fff;
+            display: inline-block;
+            font-size: 14px;
+            width: 140px;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 20px;;
+        }
+
+        .layout {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        /* page css*/
+        body {
+            font: 16px/1.5 SimSun, STKaiti, "Microsoft YaHei", SimHei, Helvetica, Arial;
+            color: #333;
+        }
+        .icon {
+            width: 1em; height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+        .wrapper {
+            background-color: #ececec;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding-top: 40px;
+        }
+
+        .aside {
+            float: left;
+            width: 280px;
+        }
+
+        .aside .user {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .aside .user h1{
+            font-size: 40px;
+        }
+
+        .aside .user h1::after {
+            content: '';
+            display: block;
+            width: 60px;
+            border-top: 1px solid #d6d6d6;
+            margin: 16px auto;
+        }
+
+        .aside .user::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            margin-top: 20px;
+            border-top: 20px solid #d6d6d6;
+            border-bottom: 20px solid transparent;
+            border-right: 140px solid #d6d6d6;
+            border-left: 140px solid transparent;
+        }
+
+        .aside .contact {
+            padding: 20px;
+        }
+
+        .aside .contact li {
+            border-bottom: 1px solid #d6d6d6;
+            list-style: none;
+            line-height: 40px;
+        }
+
+        .aside .contact .iconfont {
+            border-right: 1px solid #d6d6d6;
+            padding-right: 10px;
+            margin-right: 10px;
+            padding-left: 10px;
+            display: inline-block;
+            font-size: 20px;
+            color: #7bbaaa;
+        }
+
+        .aside .skills {
+            background: #7bbaaa;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .aside .skills dt {
+            color: #eee;
+            margin-top: 20px;
+        }
+
+        .aside .skills dd {
+            height: 4px;
+            background: #74c5b5;
+            border-radius: 2px;
+            margin-top: 10px;
+        }
+
+        .aside .skills .mastery {
+            height: 4px;
+            background: #fff;
+            display: block;
+            border-radius: 2px;
+        }
+        .aside .skills ul {
+            list-style: none;
+            white-space: nowrap;
+        }
+        .aside .skills li {
+            padding: 5px;
+        }
+
+        .aside .others h2 {
+            margin: 20px 0 0 20px;
+        }
+
+        .main {
+            margin-left: 280px;
+            background: #fff;
+            padding: 40px;
+            margin-right: 20px;
+        }
+
+        .main .intro {
+            overflow: auto;
+        }
+        .main .intro img {
+            width: 80px;
+            height: 128px;
+            float: left;
+        }
+
+        .main .intro p {
+            margin-left: 120px;
+        }
+
+        .section {
+        }
+
+        .section .pill {
+            float: left;
+            margin-top: 5px;
+        }
+
+        .section h2{
+            font-size: 40px;
+            color: #d9d9d9;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .section .more {
+            margin-left: 150px;
+            border-left: 1px solid #eee;
+        }
+        .section h3 {
+            color: #666;
+            font-size: 20px;
+            font-weight: normal;
+        }
+        .section h3 strong{
+            color: #111;
+            font-weight: bold;
+        }
+
+        .section h3::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 6px;
+            border: 2px solid #7bbaaa;
+            margin-right: 20px;
+            position: relative;
+            left: -5px;
+        }
+
+        .section h4 {
+            color: #111;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+
+
+        .section .more ul {
+            margin-left: 50px;
+            padding-bottom: 20px;
+        }
+        .section .more li {
+            color: #666;
+            font-size: 14px;
+        }
+        .design  {
+            text-align: center;
+            margin: 20px;
+        }
+        .about-me ul{
+            margin-top: 20px;
+        }
+        .about-me li{
+            margin: 10px;
+        }
+        .article li {
+            padding: 5px;
+            color: #7bbaaa;
+        }
+        .article li a {
+            color: #7bbaaa;
+        }
+
+
+        @media print {
+            .aside {
+                width: 200px;
+            }
+            .main {
+                margin-left: 200px;
+            }
+            .aside .user::after {
+                border-right-width: 100px;
+                border-left-width: 100px;
+            }
+            .pill {
+                display: none;
+            }
+
+            .section .more {
+                margin-left: 20px;
+            }
+
+            .wrapper {
+                margin: 0;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="wrapper layout clearfix">
+    <div class="aside">
+        <div class="user">
+            <h1>李斌</h1>
+            <p>应聘前端工程师</p>
+        </div>
+        <ul class="contact">
+            <li><span class="iconfont icon-email"></span> 845217637@qq.com</li>
+            <li><span class="iconfont icon-phone"></span> 17663848600</li>
+            <li><span class="iconfont icon-experience"></span> 1年前端经验</li>
+            <li><span class="iconfont icon-address"></span> 杭州</li>
+        </ul>
+        <div class="skills">
+            <h2 style="text-align: center ; padding-bottom: 10px" >我的技能</h2>
+            <ul>
+                <li>熟悉CSS3/HTML5/Grid/Flex</li>
+                <li> 熟悉Vue/Vuex/Vue Router/Axios</li>
+                <li>了解React/Redux/ReactRouter</li>
+                <li>熟悉微信小程序/移动端开发</li>
+                <li>熟悉Bootstrap/Element/AntD/Vant</li>
+                <li>熟悉MVC/MVVM</li>
+                <li>了解Webpack/Parcel/Npm/Yarn</li>
+                <li> 熟悉git/github</li>
+                <li> 熟悉Sass/Less/Babel</li>
+                <li>熟悉墨刀/PS/使用google</li>
+            </ul>
+        </div>
+        <div class="others">
+            <h2 style="text-align: center;color: #7bbaaa;">了解更多</h2>
+            <ul class="contact" style="text-align: center" >
+                <li><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-github-back"></use>
+                </svg> <a href="https://github.com/LiMiu331">Github</a></li>
+                <li><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-boke"></use>
+                </svg>
+                    <a href="https://juejin.im/user/5c8539a0f265da2d881b5e2e">我的博客</a></li>
+                <li><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-juejin"></use>
+                </svg> <a href="https://juejin.im/user/5c8539a0f265da2d881b5e2e">我的掘金</a></li>
+            </ul>
+            <h2 style="text-align: center;color: #7bbaaa; padding-bottom: 20px">技术文章</h2>
+            <ul style="text-align: center; list-style: none" class="article" >
+                <li><a href="https://juejin.im/post/5f0013fa6fb9a07e5e58c15e">从一脸懵逼到掌握跨域</a></li>
+                <li><a href="https://juejin.im/post/5efab7b4f265da22c636ae1f">从一脸懵逼到掌握闭包</a></li>
+                <li><a href="https://juejin.im/post/5ef96859f265da22da54a7ac">从一脸懵逼到掌握promise</a></li>
+                <li><a href="https://juejin.im/post/5eed80bb518825657d4607b9">简单理解函数节流和函数防抖动</a></li>
+                <li><a href="http://limiu331.gitee.io/vuepress-blog/component/mocha">使用mocha进行单元测试</a></li>
+                <li><a href="http://limiu331.gitee.io/vuepress-blog/component/chai">使用chai进行单元测试</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="intro clearfix">
+            <img src="./avatar1.jpg" alt="">
+        </div>
+            <div class="experience section">
+                <h2>工作经历</h2>
+                <div class="detail">
+                    <div class="left pill">2019/07 - 现在</div>
+                    <div class="more">
+                        <h3><strong>杭州募协网络科技有限公司</strong>, 前端开发工程师</h3>
+                        <ul>
+                            <li>还原设计图，与后端交互获取数据</li>
+                            <li>使用MVVM框架Vue进行公司后台管理项目开发</li>
+                            <li>与运营人员沟通开发活动营销页面</li>
+                            <li>用户使用工具的开发</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="projects section">
+                <h2>项目经历</h2>
+                <div class="item">
+                    <div class="more">
+                        <h3>1.Vanilla UI(个人开源作品)</h3>
+                        <img src="vanilla.jpeg" alt="" style="width: 610px;height: 412px">
+                        <ul>
+                            <li><strong>项目介绍：</strong> 该项目是参照 Framework7、Ant Design、Element UI、iView 等 UI 库思路，做的一套基于 Vue 的简易 UI 组件库，目前已支持按钮、输入框、网格、布局等UI组件。Toast、Tabs、Popover、手风琴等目前正在开发中。
+                                每个组件均经历从需求分析到 Mocha 单元测试，并用 TravisCI 实现持续集成，最终以 VuePress 为基础制作官方文档，发布于 npmjs.org。
+                                完成该项目使我对 Vue 的常用特征更加熟悉，同时提升了自己对前端工程化流程以及单元测试重要性的深刻理解， 近一步了解开源文化。</li>
+                            <li><strong>技术栈：</strong>Vue.js/ VuePress/ ES6/ Parcel/ Npm Scripts/ Mocha/ SCSS/ TravisCI</li>
+                            <li><strong>项目源码:</strong><a href="https://github.com/LiMiu331/vanilla" target="_blank">项目源码</a></li>
+                            <li><strong>预览项目:</strong><a href="https://limiu331.gitee.io/vanilla" target="_blank">点击查看</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="more">
+                        <h3>2.CourseSystem课程管理系统</h3>
+                        <img src="course.png" alt="" style="width: 610px; height: 251px; padding: 20px">
+                        <ul>
+                            <li><strong>项目介绍：</strong> 该项目是一款基于Vue全家桶+TypeScript+ echarts 的后台管理系统</li>
+                            <li><strong>技术栈：</strong>vue、vue-router、vuex、element-ui、webpack、es6</li>
+                            <li><strong>实现功能:</strong>该项目使用axios封装数据请求，以Vuex管理全局数据状态， 通过echarts动态展示图表， 包含数据管理、表格管理、 图表管理、表单管理、账户管理、个人中心等后台页面，实现的功能包括校验登录、 密码找回、编辑课程、绘制图表、 编辑账户、动态控制路由权限等功能。
+                                技术栈：TypeScript/ Echarts/ VueCLI3/ Axios/ VueRouter/ Vuex/ ElementUI</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="more">
+                        <h3>3.keep记账</h3>
+                        <img src="keep.jpg" alt="" style="padding: 20px; width: 610px"/>
+                        <ul>
+                            <li><strong>项目介绍：</strong>keep记账是一款极简的记账产品，也是一款基于 Vue、TypeScript 、Vuex、Vue Router实现的单页面应用。由本人独立设计及实现，期间遇到了很多了很多Webpack、TypeScript方面的问题，并记录在个人博客中。源代码几乎完全用TypeScript实现，用到了装饰器等语法。</li>
+                            <li><strong>技术栈：</strong>TypeScript/Vue/ Vue CLI/ Axios/ Vue Router/ Vuex/ ES6/ Npm/ Grid/ Scss /Vant ui</li>
+                            <li><strong>项目源码:</strong><a href="https://jirengu.com" target="_blank">项目源码</a></li>
+                            <li><strong>预览项目:请用手机扫码预览</li>
+                            <img src="keep-qr.png" alt="" style="margin-left: 200px; width: 100px">
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="more">
+                        <h3>4.用户标签管理系统(公司项目)</h3>
+                        <img src="label.jpeg" alt="" style="width: 610px; padding: 20px">
+                        <ul>
+                            <li><strong>项目介绍：</strong>用户，房间标签化管理，数据特征的录入和展示。方便运营人员针对公司运营数据进行分析和管理。 </li>
+                            <li><strong>技术栈：</strong>vue、vue-router、vuex、element-ui、webpack、es6</li>
+                            <li><strong>个人职责</strong>主要负责房间管理页面，用户管理页面，渠道分析页面的开发及优化工作。同时跟进项目上线后的问题及修复。</li>
+                            <li><strong>预览项目:</strong><a href="https://lable.pcmglobe.com/" target="_blank">点击查看(仅支持PC端，暂无访问权限)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="more">
+                        <h3>5.VanlaBoard</h3>
+                        <img src="vanla.jpeg" alt="" style="padding: 20px; width: 610px"/>
+                        <ul>
+                            <li><strong>项目介绍：</strong>VanlaBoard 是使用纯原生 JS 开发的，主要利用 HTML 5 的 Canvas API ，是我在学习原生 JS 及 Canvas 过程中开发的小工具。 其提供在 PC 及手机端在线画画、橡皮擦、画笔调色、画作删除等功能，并支持画作下载。</li>
+                            <li><strong>项目源码:</strong><a href="https://github.com/LiMiu331/my-canvas" target="_blank">项目源码</a></li>
+                            <li><strong>预览项目:支持PC和移动端</li>
+                            <img src="1594134733.png" alt="" style="margin-left: 200px; width: 100px">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="about-me section">
+                <h2 >关于我</h2>
+                <ul>
+                    <li>熟练 HTML、DIV + CSS 的页面布局，能根据设计图像素级完成页面制作。</li>
+                    <li>熟练使用flex弹性布局</li>
+                    <li>熟悉 HTML 5 及语义化， Canvas 动画制作，掌握 CSS 3 动画、过渡效果等常用技术。</li>
+                    <li>熟悉原生 JavaScript和部分ES6，并理解其重要概念如：原型、闭包、作用域链、面对对象、异步操作、跨域、节流、防抖等</li>
+                    <li>会使用 ES6+ 、 TypeScript</li>
+                    <li>熟悉小程序开发，并有项目经验。</li>
+                    <li>熟悉 Vue 常用功能，理解如生命周期、组件、虚拟 DOM、数据响应式等概念， 能够使用 Vue 全家桶开发项目，对 React 有一定了解。</li>
+                    <li>熟悉模块化、工程化开发流程，能够配置 Webpack。</li>
+                    <li>有移动端开发经验，会使用REM、vw/ vh、响应式 等技术制作适配手机设备的页面。</li>
+                    <li>了解 HTTP 相关知识，了解常见的 Web 性能优化方案。</li>
+                    <li>熟练使用 VsCode、WebStorm、Sass、Git 等开发工具。</li>
+                    <li>熟悉HTTP协议及浏览器渲染原理</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="design"><a href="https://dribbble.com/briceseraphin">Designed by Brice Séraphin</a></div>
+</body>
+</html>
